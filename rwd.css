@@ -1,0 +1,39 @@
+@media (max-width:600px){
+  
+    .container{
+        width: auto;
+        height: auto;
+        display: contents;
+    }
+    .left{
+        width: auto;
+        margin-bottom: 5%;
+    }
+    .a h2{
+        font-size: 20px;
+    }
+    .right{
+        width: auto;
+        height: auto;
+        display: contents;
+        padding-left: 0;
+    }
+   .education{
+        height: auto;
+        flex-direction: column;
+
+   }
+   .skill{
+        height: auto;
+        margin-bottom: 50px;
+   
+   }
+   .cc{
+        height: auto;
+        margin: 10px;
+   }
+  
+   .block  li{
+        display: inline;
+   }
+}
