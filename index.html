@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="resume.css">
+    <title>Resume</title>
+</head>
+<body>
+  <div class="blobs">
+    <div class="blob"></div>
+    <div class="blob"></div>
+    <div class="blob"></div>
+    <div class="blob"></div>
+    <div class="blob"></div>
+    <div class="blob"></div>
+    <div class="blob"></div>
+  </div>
+    <div class="container">
+        <div class="left">
+            <div class="first">
+                <div class="pic">
+                    <img src="3.jpg">
+                </div>
+                <div class="name">
+                    <div class="name2">
+                      <div class="a"><h2>徐雨彤 <span class="en">Yu-Tung Hsu</span><hr></h2><span class="font">Front-End Developer</span>
+                      </div> 
+                      <div class="ins">
+                        <ul class="contact">
+                          <li><i class="fa fa-map-marker" style="font-size: 20px;color:rgb(166, 160, 142)"></i><span>桃園市 中壢區</span></li>
+                          <li><i class="fa fa-envelope-o"style="font-size:15px;color:rgb(166, 160, 142)" ></i><span>pcy89103@gmail.com</span></li>
+                          <li><i class="fa fa-phone" style="font-size:20px;color:rgb(166, 160, 142)"></i><span>+886 903348103</span></li>
+                        </ul>
+                        
+
+                      </div>
+                        
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
+            <div class="introduction">
+              <div class="int">
+                <h2>自我介紹
+                    <span>Introduction</span>
+                </h2>
+                <div class="text">
+                  <span>我是一位剛畢業的前端工程師，專注於網站開發，
+                    並在學期間深入學習並掌握了 JavaScript、HTML 和 CSS 等基礎技術。
+                    透過課堂專案，我積極應用這些技術，完成了多個網站的設計與開發，
+                    並在其中培養了對網站結構和功能的深入理解。
+
+                    在學期間，我特別重視 RWD 網頁設計與切版，並將其應用於多個專案，
+                    確保網站在不同設備上均有良好的顯示效果。此外，我也在專案中不斷
+                    探索如何優化使用者體驗，從而提升網站的互動性和可用性。我有意識
+                    地學習最新的開發技術，並將其實際應用於專案開發中，以提高網站性能
+                    和用戶滿意度。</span>
+                </div>
+              </div>
+              
+                
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="education">
+                <div class="cc">
+                    <div class="block">
+                        <h2>學歷
+                            <span>Education</span>
+                        </h2>
+                        <ul class="listEducation"> 
+                          <li>2019~2023
+                            <ul>中原大學
+                              <li>資訊管理學系</li>
+                            </ul>
+                          </li>
+                          <li>2016~2019
+                            <ul>國立中壢高商
+                              <li>國際貿易科</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="cc">
+                  <h2>程式技能
+                      <span>Programming Skills</span>
+                  </h2>
+               <ul class="programmingSkills">
+                  <li>HTML
+                    <div class="bar">
+                      <div class="value p80"></div>
+                    </div>
+                  </li>
+                  <li>CSS
+                    <div class="bar">
+                      <div class="value p80"></div>
+                    </div>
+                  </li>
+                  <li>JS
+                    <div class="bar">
+                      <div class="value p70"></div>
+                    </div>
+                  </li>
+                  <li>RWD
+                    <div class="bar">
+                      <div class="value p40"></div>
+                    </div>
+                  </li>
+                  <li>MySQL
+                    <div class="bar">
+                      <div class="value p40"></div>
+                    </div>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+
+            <div class="skill">
+                <div class="cc">
+                  <div class="block">
+                    <h2>工作經歷
+                        <span>Experience</span>
+                    </h2>
+                    <ul class="listEducation"> 
+                      <li>2021~2024
+                        <ul>和也餐飲有限公司
+                          <li>正職人員</li>
+                        </ul>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                  
+                  
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+      const MIN_SPEED = 0.5
+  const MAX_SPEED = 2
+  
+  function randomNumber(min, max) {
+    return Math.random() * (max - min) + min
+  }
+  
+  class Blob {
+    constructor(el) {
+      this.el = el
+      const boundingRect = this.el.getBoundingClientRect()
+      this.size = boundingRect.width
+      // 隨機初始位置
+      this.initialX = randomNumber(0, window.innerWidth - this.size)
+      this.initialY = randomNumber(0, window.innerHeight - this.size)
+      this.el.style.top = `${this.initialY}px`
+      this.el.style.left = `${this.initialX}px`
+      // 速度
+      this.vx =
+        randomNumber(MIN_SPEED, MAX_SPEED) * (Math.random() > 0.5 ? 1 : -1)
+      this.vy =
+        randomNumber(MIN_SPEED, MAX_SPEED) * (Math.random() > 0.5 ? 1 : -1)
+      this.x = this.initialX
+      this.y = this.initialY
+    }
+  
+    update() {
+      this.x += this.vx
+      this.y += this.vy
+      if (this.x >= window.innerWidth - this.size) {
+        this.x = window.innerWidth - this.size
+        this.vx *= -1
+      }
+      if (this.y >= window.innerHeight - this.size) {
+        this.y = window.innerHeight - this.size
+        this.vy *= -1
+      }
+      if (this.x <= 0) {
+        this.x = 0
+        this.vx *= -1
+      }
+      if (this.y <= 0) {
+        this.y = 0
+        this.vy *= -1
+      }
+  
+      this.el.style.transform =
+        `translate(${this.x - this.initialX}px, ${this.y - this.initialY
+        }px)`
+    }
+  }
+  
+  function initBlobs() {
+    const blobEls = document.querySelectorAll('.blob')
+    const blobs = Array.from(blobEls).map((blobEl) => new Blob(blobEl))
+  
+    function update() {
+      requestAnimationFrame(update)
+      blobs.forEach((blob) => blob.update()
+      )
+    }
+    requestAnimationFrame(update)
+  }
+  
+  initBlobs()
+    </script>
+</body>
+</html
