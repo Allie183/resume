@@ -73,6 +73,9 @@ body{
     padding: 20px;
     margin-left: 50px;
 }
+.education ul{
+    padding-left: 0;
+}
 .programmingSkills{
     width: 80%;
     margin-top: 30px;
@@ -317,4 +320,11 @@ body {
 
 .blob:nth-of-type(7) {
   background: var(--cr-2);
+}
+footer{
+    text-align: center;
+
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: "微軟正黑體", sans-serif;
 }
