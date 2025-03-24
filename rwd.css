@@ -1,4 +1,4 @@
-@media (max-width:1250px){
+@media (max-width:1200px){
     .container{
         width: auto;
         height: auto;
@@ -25,6 +25,9 @@
     .education ul{
         padding-left: 0;
    }
+   .bar{
+    width: 100px;
+   }
    
     
 }
@@ -41,11 +44,9 @@
         flex-direction: column;
         margin-bottom: 3%;
     }
-    .a h2{
-        font-size: 18px;
-    }
+   
     
-    .a span{
+    .en{
         font-size: 12px;
     }
     .first{

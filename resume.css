@@ -58,7 +58,6 @@ body{
     border-radius: 10px 10px 0 0;
 }
 .introduction{
-    
     height: 50%;
     padding: 20px;
     border-radius: 0 0 10px 10px;
@@ -112,8 +111,9 @@ ul.contact{
 
 }
 .a{
-    width: 100%;
+    margin-top: 10%;
     color: #948CA9;
+    border-bottom: 1px solid #be9fcd;
 }
 .a span{
     font-weight: normal;
@@ -123,14 +123,19 @@ ul.contact{
     margin-top: 20%;
 
 }
+.cn{
+    font-size: 24px;
+}
 .en{
     font-size: 16px;
+    
 }
 .font{
     font-size:12px;
     margin-left: 10px;
+    color: #948CA9;
 }
-hr{
+hr{ 
     margin-top: 2px;
     margin-bottom: -20px;
 }
